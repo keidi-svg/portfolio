@@ -1,8 +1,2 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  experimental: {
-    appDir: true,
-  },
-};
-
-module.exports = nextConfig;
+const nextTranslate = require('next-translate')
+module.exports = nextTranslate({ experimental: { appDir: true } })
