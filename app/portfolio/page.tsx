@@ -1,6 +1,6 @@
 'use client'
 
-import { Metadata } from 'next';
+//import { Metadata } from 'next';
 import Image from 'next/image';
 
 import clsx from 'clsx';
@@ -10,11 +10,11 @@ import { ReactNode } from 'react';
 import { Button } from '@/components/Button';
 import { useRouter } from 'next/navigation';
 
-export const metadata: Metadata = {
-    title: 'Portfolio',
-    description:
-      'Keidi Teixeira Barbieri. Desenvolvedora de Software Full Stack',
-  };
+//export const metadata: Metadata = {
+//    title: 'Portfolio',
+//    description:
+//      'Keidi Teixeira Barbieri. Desenvolvedora de Software Full Stack',
+//  };
   
 // Portfolio.tsx
 
