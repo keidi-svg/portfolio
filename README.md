@@ -13,16 +13,15 @@
 ## Table of Contents 📃
 
 1. [Description](#description)
-2. [Screenshot](#screenshots)
-3. [Installation](#installation)
-4. [Usage](#usage)
-5. [Technology](#technology)
-6. [Features](#features)
-7. [Credits](#credits)
-8. [License](#license)
-9. [Contribution Guidelines](#contribution-guidelines)
-10. [Feedback](#feedback)
-11. [Socials](#socials)
+2. [Installation](#installation)
+3. [Usage](#usage)
+4. [Technology](#technology)
+5. [Features](#features)
+6. [Credits](#credits)
+7. [License](#license)
+8. [Contribution Guidelines](#contribution-guidelines)
+9. [Feedback](#feedback)
+10. [Socials](#socials)
 
 ## Description
 
