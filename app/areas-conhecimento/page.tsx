@@ -5,18 +5,18 @@ import { useRouter } from 'next/navigation';
 import { useSearchParams } from 'next/navigation';
 import { Button } from '@/components/Button';
 import { Container } from '@/components/Container';
-import { Metadata } from 'next';
+//import { Metadata } from 'next';
 import Image from 'next/image';
 
 import clsx from 'clsx';
 
 import { ReactNode } from 'react';
 
-export const metadata: Metadata = {
-    title: 'Áreas conhecimento',
-    description:
-      'Keidi Teixeira. Desenvolvedora Full Stack.',
-  };
+//export const metadata: Metadata = {
+//    title: 'Áreas conhecimento',
+//    description:
+//      'Keidi Teixeira. Desenvolvedora Full Stack.',
+//  };
   
   function GetHumanas() {
     const trimestre = useSearchParams().get('trimestre');
