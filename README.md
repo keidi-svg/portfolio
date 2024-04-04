@@ -1,3 +1,10 @@
+
+# project stil in development and will be updated with more features
+-Change language option;
+-Projects and about update;
+-Visual option
+-Better layout
+
 # portfolio
 
 ## Table of Contents 📃
@@ -18,7 +25,7 @@
 
 ....
 
-[Link to application]( )
+[Link to application](https://portfolio-black-beta-68.vercel.app/)
 
 ### What did I Learn 🏫
 
@@ -58,7 +65,7 @@ If you've followed these steps correctly then the application should be good to 
 
 ## Usage
 
-Link to live application: [Click here]( )
+Link to live application: [Click here](https://portfolio-black-beta-68.vercel.app/)
 
 Please follow these steps to use the application locally
 
