@@ -1,6 +1,6 @@
 'use client'
 
-import { Metadata } from 'next';
+//import { Metadata } from 'next';
 
 import ProjectCard from '@/components/ProjectCard';
 import { SimpleLayout } from '@/components/SimpleLayout';
@@ -126,10 +126,10 @@ function HighLightedWord() {
   );
 }
 
-export const metadata: Metadata = {
-  title: 'Projetos',
-  description: `Projetos do primeiro trimestre de ciências da natureza`,
-};
+//export const metadata: Metadata = {
+//  title: 'Projetos',
+//  description: `Projetos do primeiro trimestre de ciências da natureza`,
+//};
 
 export default function Projects() {
   return (
