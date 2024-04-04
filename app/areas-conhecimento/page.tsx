@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation';
 import { useSearchParams } from 'next/navigation';
 import { Button } from '@/components/Button';
 import { Container } from '@/components/Container';
+import React, { Suspense } from 'react';
 //import { Metadata } from 'next';
 import Image from 'next/image';
 
@@ -102,7 +103,7 @@ import { ReactNode } from 'react';
 
 export default function AreasConhecimento() {
     return (
-        <>
+      <Suspense fallback={<div>Loading...</div>}>
           <Container className="mt-12 md:mt-14">
                 <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
                     <div className="flex flex-col space-y-10">
@@ -118,6 +119,7 @@ export default function AreasConhecimento() {
           </div>
         </div>
       </Container>
-        </>
+      </Suspense>
       );
+}
 }
