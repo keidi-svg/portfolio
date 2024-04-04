@@ -1,6 +1,6 @@
 'use client'
 
-import { Metadata } from 'next';
+//import { Metadata } from 'next';
 
 import ProjectCard from '@/components/ProjectCard';
 import { SimpleLayout } from '@/components/SimpleLayout';
@@ -43,10 +43,10 @@ function HighLightedWord() {
   );
 }
 
-export const metadata: Metadata = {
-  title: 'Projetos',
-  description: `Projetos do primeiro trimestre de matemática`,
-};
+//export const metadata: Metadata = {
+//  title: 'Projetos',
+//  description: `Projetos do primeiro trimestre de matemática`,
+//};
 
 export default function Projects() {
   return (
