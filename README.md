@@ -19,8 +19,7 @@
 5. [Features](#features)
 6. [Credits](#credits)
 7. [Contribution Guidelines](#contribution-guidelines)
-8. [Feedback](#feedback)
-9. [Socials](#socials)
+8. [Socials](#socials)
 
 ## Description
 
