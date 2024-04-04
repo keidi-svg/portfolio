@@ -1,6 +1,6 @@
 'use client'
 
-import { Metadata } from 'next';
+//import { Metadata } from 'next';
 
 import ProjectCard from '@/components/ProjectCard';
 import { SimpleLayout } from '@/components/SimpleLayout';
