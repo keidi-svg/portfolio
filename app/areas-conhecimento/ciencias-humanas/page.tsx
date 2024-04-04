@@ -115,10 +115,10 @@ function HighLightedWord() {
   );
 }
 
-export const metadata: Metadata = {
-  title: 'Projetos',
-  description: `Projetos do primeiro trimestre de ciências humanas`,
-};
+//export const metadata: Metadata = {
+//  title: 'Projetos',
+//  description: `Projetos do primeiro trimestre de ciências humanas`,
+//};
 
 export default function Projects() {
   return (
