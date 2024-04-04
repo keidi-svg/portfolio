@@ -18,10 +18,9 @@
 4. [Technology](#technology)
 5. [Features](#features)
 6. [Credits](#credits)
-7. [License](#license)
-8. [Contribution Guidelines](#contribution-guidelines)
-9. [Feedback](#feedback)
-10. [Socials](#socials)
+7. [Contribution Guidelines](#contribution-guidelines)
+8. [Feedback](#feedback)
+9. [Socials](#socials)
 
 ## Description
 
