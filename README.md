@@ -1,8 +1,11 @@
 
 # project stil in development and will be updated with more features
--Change language option;
--Projects and about update;
+-Change language option
+
+-Projects and about update
+
 -Visual option
+
 -Better layout
 
 # portfolio
