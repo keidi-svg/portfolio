@@ -9,12 +9,12 @@ import { Container, OuterContainer } from '@/components/Container';
 import {
   GitHubIcon,
   LinkedInIcon
-} from '../components/SocialIcons';
+} from '../../components/SocialIcons';
 
 // Logos
-import logoIF from '../public/logos/Imagem_Filmes_logo_p_b.svg';
-import logoGL from '../public/logos/grupo_lhasa.svg';
-import logoSenai from '../public/logos/senai.svg';
+import logoIF from '.../public/logos/Imagem_Filmes_logo_p_b.svg';
+import logoGL from '.../public/logos/grupo_lhasa.svg';
+import logoSenai from '.../public/logos/senai.svg';
 
 interface IconProps {
   className?: string;

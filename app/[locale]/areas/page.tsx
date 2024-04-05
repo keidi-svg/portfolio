@@ -26,7 +26,7 @@ import { ReactNode } from 'react';
         <div className="rounded-2xl border border-sunglow bg-space-cadet bg-topography-sunglow p-6">
           
         <Button
-            href={`/areas-conhecimento/ciencias-humanas?trimestre=${trimestre}`}
+            href={`/areas/ciencias-humanas?trimestre=${trimestre}`}
             variant="primary"
             text="Humanas"
             type="button"
@@ -42,7 +42,7 @@ import { ReactNode } from 'react';
         <div className="rounded-2xl border border-aquamarine bg-space-cadet bg-topography-aquamarine p-6">
           
         <Button
-            href={`/areas-conhecimento/ciencias-natureza?trimestre=${trimestre}`}
+            href={`/areas/ciencias-natureza?trimestre=${trimestre}`}
             variant="primary"
             text="Natureza"
             type="button"
@@ -58,7 +58,7 @@ import { ReactNode } from 'react';
         <div className="rounded-2xl border border-bright-pink bg-space-cadet bg-topography-bright-pink p-6">
           
         <Button
-            href={`/areas-conhecimento/linguagens?trimestre=${trimestre}`}
+            href={`/areas/linguagens?trimestre=${trimestre}`}
             variant="primary"
             text="Linguagens"
             type="button"
@@ -74,7 +74,7 @@ import { ReactNode } from 'react';
         <div className="rounded-2xl border border-sunglow bg-space-cadet bg-topography-sunglow p-6">
           
         <Button
-            href={`/areas-conhecimento/matematica?trimestre=${trimestre}`}
+            href={`/areas/matematica?trimestre=${trimestre}`}
             variant="primary"
             text="Matematica"
             type="button"
@@ -90,7 +90,7 @@ import { ReactNode } from 'react';
         <div className="rounded-2xl border border-bright-pink bg-space-cadet bg-topography-bright-pink p-6">
           
         <Button
-            href={`/areas-conhecimento/tecnologia?trimestre=${trimestre}`}
+            href={`/areas/tecnologia?trimestre=${trimestre}`}
             variant="primary"
             text="Tecnologia da Informação"
             type="button"

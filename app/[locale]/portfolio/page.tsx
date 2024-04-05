@@ -39,7 +39,7 @@ function GetPortfolioAntigo() {
         <div className="rounded-2xl border border-aquamarine bg-space-cadet bg-topography-aquamarine p-6">
           
         <Button
-            href="/areas-conhecimento?trimestre=1"
+            href="/areas?trimestre=1"
             variant="primary"
             text="Primeiro trimestre"
             type="button"
@@ -54,7 +54,7 @@ function GetPortfolioAntigo() {
         <div className="rounded-2xl border border-bright-pink bg-space-cadet bg-topography-bright-pink p-6">
           
         <Button
-            href="/areas-conhecimento?trimestre=2"
+            href="/areas?trimestre=2"
             variant="primary"
             text="Segundo trimestre (em construção)"
             type="button"
@@ -69,7 +69,7 @@ function GetPortfolioAntigo() {
         <div className="rounded-2xl border border-sunglow bg-space-cadet bg-topography-sunglow p-6">
           
         <Button
-            href="/areas-conhecimento?trimestre=3"
+            href="/areas?trimestre=3"
             variant="primary"
             text="Terceiro trimestre (em construção)"
             type="button"
