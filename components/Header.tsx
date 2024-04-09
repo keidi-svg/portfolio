@@ -3,10 +3,12 @@
 import { Fragment, useEffect, useRef, ReactNode, CSSProperties } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useState } from 'react';
 import { usePathname } from 'next/navigation';
 import { Popover, Transition } from '@headlessui/react';
 import { motion } from 'framer-motion';
 import clsx from 'clsx';
+import useTranslation from 'next-translate/useTranslation';
 
 // Components
 import { Container } from './Container';
@@ -83,6 +85,78 @@ function MoonIcon(props: IconProps) {
   );
 }
 
+function USAFlagIcon(props: IconProps) {
+  return (
+    <div
+      className={clsx(styles.sunIcon, props.className)}
+      style={{
+        backgroundImage: `url('https://img.icons8.com/color/48/usa.png')`,
+        backgroundSize: 'contain', // ou 'cover' dependendo do comportamento desejado
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
+        width: '32px', // Defina o tamanho desejado
+        height: '32px', // Defina o tamanho desejado
+      }}
+    />
+  );
+}
+
+function BrazilFlagIcon(props: IconProps) {
+  return (
+    <div
+      className={clsx(styles.moonIcon, props.className)}
+      style={{
+        backgroundImage: `url('https://img.icons8.com/emoji/48/brazil-emoji.png')`,
+        backgroundSize: 'contain', // ou 'cover' dependendo do comportamento desejado
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
+        width: '32px', // Defina o tamanho desejado
+        height: '32px', // Defina o tamanho desejado
+      }}
+    />
+  );
+}
+
+
+export function LanguageSwitcher() {
+  const { t, lang } = useTranslation('common');
+  //const { t, lang } = useTranslation(); // Adicione a função setLang para atualizar o idioma
+  const [isBrazilSelected, setIsBrazilSelected] = useState(true); // Estado para controlar a seleção da bandeira
+  const buttonRef = useRef<HTMLButtonElement>(null); 
+  function toggleLanguage() {
+    // Implementa a lógica de alternância de idioma
+    const newLang = lang === 'pt-BR' ? 'en-US' : 'pt-BR';
+    return newLang;
+    // Você pode adicionar lógica adicional aqui, como salvar o idioma selecionado no armazenamento local.
+  }
+
+  function toggleFlag() {
+    // Alternar entre as bandeiras quando o botão for clicado
+    setIsBrazilSelected((prevState) => !prevState);
+  }
+
+  return (
+    <motion.button
+      type="button"
+      aria-label="Switch Language"
+      className={`group rounded-full bg-white/90 px-3 py-2 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur transition dark:bg-zinc-800/90 dark:ring-white/10 dark:hover:ring-white/20 `}
+      onClick={() => {
+        toggleLanguage();
+        toggleFlag();
+      }}
+      whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 0.9 }}
+      ref={buttonRef}
+    >
+      {/* Substitua os ícones pelas respectivas bandeiras */}
+      {isBrazilSelected ? (
+        <BrazilFlagIcon className="h-6 w-6 fill-zinc-100 stroke-zinc-500 transition duration-200 ease-in group-hover:fill-zinc-200 group-hover:stroke-zinc-700 dark:hidden [@media(prefers-color-scheme:dark)]:fill-teal-50 [@media(prefers-color-scheme:dark)]:stroke-teal-500 [@media(prefers-color-scheme:dark)]:group-hover:fill-teal-50 [@media(prefers-color-scheme:dark)]:group-hover:stroke-teal-400" />
+      ) : (
+        <USAFlagIcon className="h-6 w-6 fill-zinc-700 stroke-teal-500 transition duration-200 ease-in dark:block [@media(prefers-color-scheme:dark)]:group-hover:stroke-teal-400 [@media_not_(prefers-color-scheme:dark)]:fill-teal-400/10 [@media_not_(prefers-color-scheme:dark)]:stroke-teal-500" />
+      )}
+    </motion.button>
+  );
+}
 
 function MobileNavItem({
   href,
@@ -146,6 +220,7 @@ function MobileNavigation(props: IconProps) {
                 <MobileNavItem href="/experience">Experiência</MobileNavItem>
                 <MobileNavItem href="/portfolio">Portfolio</MobileNavItem>
                 <MobileNavItem href="/contact">Contato</MobileNavItem>
+                <LanguageSwitcher />
               </ul>
             </nav>
           </Popover.Panel>
@@ -177,10 +252,11 @@ function NavItem({ href, children }: { href: string; children: ReactNode }) {
 }
 
 function DesktopNavigation(props: IconProps) {
+  const { t, lang } = useTranslation('common');
   return (
     <nav {...props}>
       <ul className="flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
-        <NavItem href="/about">Sobre</NavItem>
+        <NavItem href="/about">{t('language')}</NavItem>
         <NavItem href="/experience">Experiência</NavItem>
         <NavItem href="/portfolio">Portfolio</NavItem>
         <NavItem href="/contact">Contato</NavItem>
@@ -242,6 +318,9 @@ function ModeToggle() {
     </motion.button>
   );
 }
+
+
+
 
 function clamp(number: number, a: number, b: number) {
   let min = Math.min(a, b);
@@ -489,7 +568,8 @@ export function Header() {
               </div>
               <div className="flex justify-end md:flex-1">
                 <div className="pointer-events-auto">
-                  <ModeToggle />
+                <LanguageSwitcher/>
+                <ModeToggle />
                 </div>
               </div>
             </div>

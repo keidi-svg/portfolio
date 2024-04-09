@@ -1,0 +1,37 @@
+{
+    "language": "Mudar a língua",
+    "experience": [
+        {
+          "company": "Imagem Filmes",
+          "role": "Estágio em desenvolvimento de software Java",
+          "date": "2023 — 2024"
+        },
+        {
+          "company": "Grupo Lhasa",
+          "role": "Estágio automação e desenvolvimento de software",
+          "date": "2022 — 2023"
+        }
+      ],
+      "portfolio": "2024 © Portfólio Keidi",
+      "contato": {
+        "email": "keidi.t.b@gmail.com",
+        "formulário": "link"
+      },
+      "educacao": {
+        "instituicao": "SENAI Florianópolis (CTAI)",
+        "curso": "Técnico em Desenvolvimento de Sistemas",
+        "nota": "A",
+        "data": "2022 — 2024"
+      },
+
+      "header": [
+        {
+          "about": "Sobre",
+          "experience": "Experiência",
+          "portfolio": "Portfolio",
+          "contact": "Contato"
+        }
+      ]
+
+}
+  

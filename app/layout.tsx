@@ -44,7 +44,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="pt" className="w-full">
+    <html lang="pt-BR" className="w-full">
       <head>
         <Script id="set-theme">{`
           let darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
